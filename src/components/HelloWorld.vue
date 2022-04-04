@@ -12,17 +12,12 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to the Vuetify 3 Beta
+          Hi there! I'm Bryce
         </h1>
 
 
         <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
+          I'm a product designer at Elavon and a graduate of the Computer Science program at Georgia Tech.
         </p>
       </v-col>
 
@@ -31,7 +26,7 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-5">
-          What's next?
+          About me
         </h2>
 
         <v-row justify="center">
@@ -94,7 +89,7 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-5">
-          Card Example
+          Experience
         </h2>
 
         <v-row justify="center">
@@ -108,27 +103,9 @@
             tile
           >
             <v-list-item v-for="blog in blogs" :key="blog.id">
-              <v-list-item-header>
+              <v-list-item-header two-line>
                 <v-list-item-title>{{ blog.attributes.name }}</v-list-item-title>
-              </v-list-item-header>
-            </v-list-item>
-
-            <v-list-item two-line>
-              <v-list-item-header>
-                <v-list-item-title>Two-line item</v-list-item-title>
-                <v-list-item-subtitle>Secondary text</v-list-item-subtitle>
-              </v-list-item-header>
-            </v-list-item>
-
-            <v-list-item three-line>
-              <v-list-item-header>
-                <v-list-item-title>Three-line item</v-list-item-title>
-                <v-list-item-subtitle>
-                  Secondary line text Lorem ipsum dolor sit amet,
-                </v-list-item-subtitle>
-                <v-list-item-subtitle>
-                  consectetur adipiscing elit.
-                </v-list-item-subtitle>
+                <v-list-item-subtitle>{{ blog.attributes.description }}</v-list-item-subtitle>
               </v-list-item-header>
             </v-list-item>
           </v-card>
