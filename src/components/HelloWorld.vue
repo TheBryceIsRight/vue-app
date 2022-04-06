@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col cols="12">
         <!-- Undraw hero illustration -->
-        <svg width="778" height="606" viewBox="0 0 778 606" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="606" viewBox="0 0 778 606" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_19_73790)">
         <path d="M620.351 516.722C658.265 516.722 689 509.225 689 499.978C689 490.731 658.265 483.234 620.351 483.234C582.437 483.234 551.701 490.731 551.701 499.978C551.701 509.225 582.437 516.722 620.351 516.722Z" fill="#3F3D56"/>
         <path d="M379.97 146.429V368.01C379.969 370.649 378.919 373.181 377.052 375.047C375.185 376.913 372.654 377.961 370.014 377.961H280.057C278.749 377.964 277.454 377.708 276.245 377.209C275.037 376.709 273.938 375.977 273.013 375.052C272.088 374.128 271.355 373.03 270.855 371.821C270.356 370.613 270.099 369.317 270.101 368.01V146.429C270.101 145.122 270.358 143.827 270.859 142.619C271.359 141.411 272.092 140.314 273.017 139.389C273.941 138.465 275.039 137.731 276.247 137.231C277.455 136.731 278.749 136.473 280.057 136.473H293.521V138.201C293.521 140.375 294.385 142.46 295.922 143.997C297.459 145.535 299.545 146.399 301.719 146.399H347.469C349.643 146.399 351.728 145.535 353.265 143.997C354.803 142.46 355.667 140.375 355.667 138.201V136.473H370.014C371.322 136.473 372.616 136.73 373.825 137.23C375.033 137.73 376.13 138.464 377.055 139.388C377.98 140.313 378.713 141.411 379.213 142.619C379.713 143.827 379.971 145.122 379.97 146.429V146.429Z" fill="#004D78"/>
@@ -100,8 +100,8 @@
                 height="400px"
                 cover
               >
-                <v-card-title class="text-white d-flex justify-start font-weight-light" v-text="project.attributes.Name"></v-card-title>
-                <v-card-text class="text-white d-flex justify-start" v-text="project.attributes.Role"></v-card-text>
+                <v-card-title class="text-white d-flex justify-start font-weight-light text-left" v-text="project.attributes.Name"></v-card-title>
+                <v-card-text class="text-white d-flex justify-start text-left" v-text="project.attributes.Role"></v-card-text>
                 <v-card-text class="text-white text-left" v-text="project.attributes.Description"></v-card-text>
               </v-img>
             </v-card>
