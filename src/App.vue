@@ -25,7 +25,7 @@
           </v-btn>
       </v-app-bar>
     <v-main>
-      <hello-world/>
+      <router-view />
     </v-main>
   </v-app>
 
@@ -33,10 +33,8 @@
 
 <script>
 import axios from 'axios';
-import HelloWorld from './components/HelloWorld.vue';
 
 export default {
-  components: { HelloWorld },
   name: 'App',
   data () {
     return {

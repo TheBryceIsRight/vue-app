@@ -68,60 +68,13 @@
       <!-- Introduction -->
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Hi there! I'm Bryce
+          Functionize page
         </h1>
 
 
         <p class="subheading font-weight-regular">
-          I'm a UX designer at Functionize and a graduate of the Computer Science program at Georgia Tech.
+        Holy shit the router works!        
         </p>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-5">
-          My projects
-        </h2>
-    <!-- Projects -->
-    <v-container fluid>
-      <v-row dense>
-        <v-col
-          v-for="project in projects" :key="project.id"
-          :cols="project.attributes.flex"
-        > 
-          <router-link :to="project.attributes.route" style="text-decoration: none; color: inherit;">
-            <v-card v-ripple >
-              <v-img
-                :src= "project.attributes.Image.data.attributes.caption"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="400px"
-                cover
-              >
-                <v-card-title class="text-white d-flex justify-start font-weight-light" v-text="project.attributes.Name"></v-card-title>
-                <v-card-text class="text-white d-flex justify-start" v-text="project.attributes.Role"></v-card-text>
-                <v-card-text class="text-white text-left" v-text="project.attributes.Description"></v-card-text>
-              </v-img>
-            </v-card>
-          </router-link>
-        </v-col>
-      </v-row>
-    </v-container>
-      </v-col>
-
-    
-      <!-- About Me -->
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-5">
-          About Me
-        </h2>
-        <v-spacer/>
-        <p>More information coming soon! :)</p>
       </v-col>
     </v-row>
     
@@ -161,10 +114,7 @@ export default {
         `http://localhost:1337/api/projects/?${query}`
       );
       console.log(Response.data.data);
-
       this.projects = Response.data.data
-      const response = await axios.get('http://localhost:1337/api/blogs')
-      this.blogs = response.data.data
 
     } catch (error) {
       this.error = error;
