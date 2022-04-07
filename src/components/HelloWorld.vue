@@ -101,7 +101,7 @@
                 cover
               >
                 <v-card-title class="text-white d-flex justify-start font-weight-light text-left" v-text="project.attributes.Name"></v-card-title>
-                <v-card-text class="text-white d-flex justify-start text-left" v-text="project.attributes.Role"></v-card-text>
+                <v-card-text class="text-white font-weight-bold d-flex justify-start text-left" v-text="project.attributes.Role"></v-card-text>
                 <v-card-text class="text-white text-left" v-text="project.attributes.Description"></v-card-text>
               </v-img>
             </v-card>
@@ -122,7 +122,7 @@
         </h2>
         <v-spacer/>
         <p>More information coming soon! :)</p>
-        <svg width="842" height="722" viewBox="0 0 842 722" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="722" viewBox="0 0 842 722" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M282.948 430.358C281.965 429.99 281.076 429.411 280.341 428.662C279.607 427.912 279.046 427.011 278.697 426.021C278.348 425.031 278.221 423.977 278.323 422.933C278.426 421.888 278.756 420.879 279.291 419.976L262.828 400.497L275.983 398.923L289.599 417.662C291.056 418.661 292.095 420.16 292.521 421.875C292.946 423.59 292.729 425.401 291.909 426.966C291.089 428.531 289.724 429.741 288.072 430.366C286.421 430.991 284.597 430.988 282.948 430.358V430.358Z" fill="#FFB6B6"/>
           <path d="M215.169 612.927L223.915 612.926L228.077 579.167L215.167 579.168L215.169 612.927Z" fill="#FFB6B6"/>
           <path d="M212.938 610.07L215.4 610.07L225.011 606.158L230.163 610.069H230.164C233.075 610.069 235.867 611.227 237.926 613.286C239.984 615.346 241.141 618.14 241.141 621.053V621.41L212.938 621.411L212.938 610.07Z" fill="#2F2E41"/>
